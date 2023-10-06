@@ -21,7 +21,7 @@ Product.belongsToMany(Tag, {
 });
 
 // Tags belongToMany Products (through ProductTag)
-TimeRanges.belongsToMany(Product, {
+Tag.belongsToMany(Product, {
   through: ProductTag,
   foreignKey:'category_id'
 });
